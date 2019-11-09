@@ -170,7 +170,7 @@ public class SQLitePlugin extends CordovaPlugin {
       case Cursor.FIELD_TYPE_FLOAT:
         return cursor.getFloat(index);
       case Cursor.FIELD_TYPE_INTEGER:
-        return cursor.getInt(index);
+        return cursor.getLong(index);
       case Cursor.FIELD_TYPE_BLOB:
         // convert byte[] to binary string; it's good enough, because
         // WebSQL doesn't support blobs anyway
